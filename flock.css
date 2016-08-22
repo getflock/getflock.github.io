@@ -1,0 +1,421 @@
+/*Fonts*/
+
+@font-face {
+	font-family: Circular Bold;
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Bold.eot);
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Bold.woff) format("woff"),
+	     url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Bold.ttf) format("truetype");
+	font-style: normal;
+	font-weight: 800
+}
+
+@font-face {
+	font-family: Circular Medium;
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Medium.eot);
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Medium.woff) format("woff"),
+	     url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Medium.ttf) format("truetype");
+	font-style: normal;
+	font-weight: 600
+}
+
+@font-face {
+	font-family: Circular Book;
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Book.eot);
+	src: url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Book.woff) format("woff"),
+	     url(https://dl.dropboxusercontent.com/u/2725749/Flock/Fonts/CircularStd-Book.ttf) format("truetype");
+	font-style: normal;
+	font-weight: 400
+}
+
+.circular-book {
+	font-family: 'Circular Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.circular-medium {
+	font-family: 'Circular Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*Transitions*/
+
+@-webkit-keyframes fadeIn { 
+    from { opacity: 0; } to { opacity: 1; } 
+}
+@-moz-keyframes fadeIn { 
+    from { opacity: 0; } to { opacity: 1; } 
+}
+@keyframes fadeIn { 
+    from { opacity: 0; } to { opacity: 1; } 
+}
+
+.fade-in {
+    opacity: 0;  /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    -o-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+   
+    -webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+   
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-oscillate {
+    0%, 50%, 100%      { opacity: 0; }
+    13%, 38%, 63%, 88% { opacity: 0.5; }
+    25%, 75%           { opacity: 1; }
+    6%, 44%, 56%, 94%  { opacity: 0.25; }
+    19%, 31%, 69%, 81% { opacity: 0.75; }
+
+}
+
+.fade-oscillate {
+    -webkit-animation: fade-oscillate 4s infinite;
+    -moz-animation: fade-oscillate 4s infinite;
+    -o-animation: fade-oscillate 4s infinite;
+    animation: fade-oscillate 4s infinite;
+}
+
+/*CSS Element Styling*/
+
+body {
+	font-family: 'Circular Book';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+	position: fixed;
+
+	display: table;
+	table-layout: fixed;
+
+	top: 0; 
+	left: 0;
+	height: 10%;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	background-color: rgba(255, 255, 255, 0.95);
+
+	z-index: 10000;
+}
+
+#container {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	height: 90%;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	background-color: white;
+
+	z-index: 10;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.landing-page-text {
+	position: relative;
+	display: inline-table; 
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: auto; 
+    text-align: center;
+}
+
+#downArrow {
+	display: inline-block;
+	left: 43.25%;
+	bottom: 15px;
+	width: 12.5%;
+	max-width: 12.5%;
+	position: absolute;
+}
+
+.landing-page-text-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#landing-page-focus {
+	display: inline-block;
+	color: white;
+	font-size: 48px;
+}
+
+#landing-page-description {
+	display: inline-block;
+	color: #eeeeee;
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+.header-content {
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+}
+
+#search-bar {
+	width: 150px;
+	padding-left: 25px;
+	font-family: "Circular Book";
+	vertical-align: middle;
+	border-radius: 3px;
+	border: 1px solid #999999;
+	margin-right: 5px;
+	height: 22px;
+	-webkit-transition: width .35s ease-in-out;
+  	transition: width .35s ease-in-out;
+}
+
+#search-bar:focus {
+	width: 250px;
+}
+
+#search-bar-icon {
+	cursor: pointer;
+	position: relative;
+	font-size: 14px !important;
+	left: 25px;
+}
+
+#search-bar-icon::before {
+	content: "\f002";
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+}
+
+#title {
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 30px;
+	width: 50px;
+	color: #404040;
+	font-size: 24px;
+}
+
+.page-icon {
+	float: right;
+	margin-right: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px !important;
+	color: #999999;
+	cursor: pointer;
+}
+
+#main-nav {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    height: 5%;
+    width: auto;
+
+    background-color: inherit;
+    display: inline-table;
+    table-layout: fixed;
+
+    text-align: left;
+
+    vertical-align: middle;
+}
+
+#main-nav li {
+	float: left;
+}
+
+#main-nav li a {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 15px;
+
+	font-size: 14px;
+
+	text-align: center;
+    text-transform: uppercase;	
+	color: #404040;
+    cursor: pointer;
+    text-decoration: none;
+
+    -webkit-transition: border 1s;
+    transition: border 1s;
+}
+
+.underline-from-left {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+
+.underline-from-left:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 3px;
+	background: red;
+	height: 3px;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.underline-from-left:hover:before, .underline-from-left:focus:before, .underline-from-left:active:before {
+	right: 0;
+}
+
+.login-register {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.deal {
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19) !important;
+	width: 22.5%;
+	height: 55%;
+	/*border-radius: 3px;*/
+	vertical-align: top;
+}
+
+.share-icon {
+	font-size: 12px;
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+	color: #404040;
+}
+
+.item-image {
+	display: inline-block;
+	width: 100%;
+	max-height: 60%;
+	min-height: 60%;
+	/*border-top-left-radius: 3px;
+	border-top-right-radius: 3px;*/
+}
+
+.retailer-logo {
+	display: inline-block;
+	width: 20%;
+	max-width: 20%;
+	height: 20%;
+	max-height: 20%;
+	position: absolute;
+	top: calc(40% - 2px);
+	left: 40%;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
+.retailer {
+	font-size: 14px;
+	color: #aaaaaa;
+	text-align: left !important;
+}
+
+.deal-description {
+	margin-top: 10px;
+	font-size: 18px;
+	color: #404040;
+	text-align: left !important;
+}
+
+.user-input {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	position: absolute;
+	bottom: 10px;
+}
+
+.input-icons {
+	display: table-cell;
+	width: 24%;
+	cursor: pointer;
+}
+
+.fa-thumbs-up.input-icons:focus {
+	color: green !important;
+}
+
+.fa-thumbs-down.input-icons:focus {
+	color: red !important;
+}
+
+.input-icons:not(:last-of-type) {
+	border-right: 1px solid #aaaaaa;
+}
+
+.how-it-works {
+	font-size: 48px !important;
+	text-align: center;
+	color: #404040;
+}
+
+.how-it-works-description {
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.hiw {
+	width: 20%; 
+	height: 40%; 
+	float: left;
+	margin-top: 10%;
+}
+
+.hiw:first-of-type {
+	margin-left: 10%;
+}

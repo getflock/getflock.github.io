@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 	<section id="header">
 		<div class="header-content" style="width: 60%; text-align: left;">
 			<img id="logo" src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/flocklogo.png"></img>
@@ -21,8 +22,8 @@
 			<span class="login-register">Register</span>
 			<span class="login-register" style="margin-right: 15px;">Log In</span>
 		</div>
-
 	</section>
+	
 	<section id="container">
 		<div class="landing-page-text fade-in" id="intro" style="background: #DEA5A4;">
 			<div class="landing-page-text-cell">
@@ -34,49 +35,91 @@
 			<img src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/downArrowWhite.png" id="downArrow" class="fade-oscillate"></img>
 		</div>
 		<div class="landing-page-text" style="background: white;">
-			<span style="font-size: 24px; margin-top: 30px; display: inline-block;">How Flock Works</span>
+			<span style="font-size: 30px; margin-top: 30px; display: inline-block;">How Flock Works</span>
 			<br>
 			<div class="landing-page-text-cell hiw">
 				<i class="fa fa-search how-it-works" aria-hidden="false"></i>
-				<br><br>
-				<span class="how-it-works-text">Browse Flock's online deals, sourced from retailers worldwide.</span>
+				<p class="how-it-works-text">Browse Flock's online deals, sourced from retailers worldwide.</p>
 			</div>
 			<div class="landing-page-text-cell hiw">
 				<i class="fa fa-shopping-cart how-it-works" aria-hidden="false"></i>
-				<br><br>
-				<span class="how-it-works-text">Add items you're interested in to your cart.</span>
+				<p class="how-it-works-text">Add items you want to your cart and confirm your selections.</p>
 			</div>
 			<div class="landing-page-text-cell hiw">
 				<i class="fa fa-user-plus how-it-works" aria-hidden="false"></i>
-				<br><br>
-				<span class="how-it-works-text">Invite friends or wait for enough people to add the item(s).</span>
+				<p class="how-it-works-text">Invite friends or wait for other people to add the same item(s).</p>
 			</div>
 			<div class="landing-page-text-cell hiw" style="">
 				<i class="fa fa-rocket how-it-works" aria-hidden="false"></i>
-				<br><br>
-				<span class="how-it-works-text">Flock will place the combined order and ship your items.</span>
+				<p class="how-it-works-text" align="justify">Flock will place the bulk order and then quickly re-ship your items.</p>
 			</div>
-			<span style="font-size: 24px; margin-top: 50px; display: inline-block;">You're not charged until the quota is reached.</span>
+			<span style="font-size: 24px; margin-top: 30px; display: inline-block;">You're not charged until the order is placed.</span>
 		</div>
 		<div class="landing-page-text" style="background: #D9F3FF;">
-			<span style="font-size: 24px; margin-top: 30px; display: inline-block;">Meet the Team</span>
+			<span style="font-size: 30px; margin-top: 30px; display: inline-block;">Meet the Team</span>
 			<div class="landing-page-text-cell">
 
 			</div>
 		</div>
-		<div class="landing-page-text" style="background: white; height: 30%;">
-			<div class="landing-page-text-cell">
-
+		<div id="footer" style="background: white; height: 50%; vertical-align: top;">
+			<div class="header-content" style="width: 100%; text-align: left;">
+				<span id="title" class="circular-book" style="margin-top: 20px; margin-left: 20px;">Flock</span>
 			</div>
+			<br>
+
+			<table id="links">
+				<tr>
+					<th>Company</th>
+					<th>Help</th>
+					<th>Partners</th>
+					<th>Social Media</th>
+				</tr>
+				<tr>
+					<td>About Us</td>
+					<td>FAQ</td>
+					<td>Current</td>
+					<td rowspan="2">
+						<a href="https://www.facebook.com/getflock" target="_blank">
+							<img src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/fb_logo.png" class="social-media-icons" ></img>
+						</a>
+						<a href="#" target="_blank">
+							<img src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/linkedin_logo.png" class="social-media-icons"></img>
+						</a>
+						<a href="https://twitter.com/get_flock" target="_blank">
+							<img src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/twitter_logo.png" class="social-media-icons"></img>
+						</a>
+						<a href="#" target="_blank">
+							<img src="https://dl.dropboxusercontent.com/u/2725749/Flock/Assets/ig_logo.png" class="social-media-icons"></img>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Press</td>
+					<td>Suggest Deals</td>
+					<td>Investors</td>
+				</tr>
+				<tr>
+					<td>Careers</td>
+					<td>Support</td>
+					<td>Join Us</td>
+				</tr>
+				<tr>
+					<td>Reviews</td>
+					<td>Referrals</td>
+				</tr>
+				<tr>
+					<td>Policies</td>
+				</tr>
+			</table>
 		</div>
 	</section>
 
 	<script>
 		$('#downArrow').click(function() {
-        $("html, body").animate({
-            scrollTop: $('#intro').height()
-        }, 1500);
-    });
+            $("html, body").animate({
+                scrollTop: $('#intro').height()
+            }, 1500);
+        });
 	</script>
 
 </body>

@@ -94,6 +94,10 @@ html, body {
     padding: 0px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .hidden {
 	display: none;
 }
@@ -428,6 +432,16 @@ html, body {
 	margin-left: 10%;
 }
 
+.team-profiles {
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 #links {
 	text-align: left;
 	margin-left: 20px;
@@ -438,7 +452,13 @@ html, body {
 	font-size: 14px;
 }
 
+#links th {
+	height: 30px;
+	cursor: pointer;
+}
+
 #links td {
+	height: 24px;
 	cursor: pointer;
 }
 

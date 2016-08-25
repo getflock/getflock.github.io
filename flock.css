@@ -98,6 +98,10 @@ a {
 	text-decoration: none;
 }
 
+i {
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
@@ -327,10 +331,10 @@ a {
 .deal {
 	display: inline-block;
 	position: relative;
-	margin: 5px;
+	margin: 2.5px;
 	margin-bottom: 20px;
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19) !important;
-	width: 22.5%;
+	width: 24%;
 	height: 55%;
 	/*border-radius: 3px;*/
 	vertical-align: top;
@@ -436,10 +440,10 @@ a {
 	position: relative;
 	vertical-align: top;
 	display: inline-block;
-	height: 200px;
-	width: 200px;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 15%;
+	max-width: 15%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #links {
@@ -469,5 +473,58 @@ a {
 	margin-right: 20px;
 }
 
+#cart {
+	display: inline-table;
+	margin-right: 1%;
+	float: left;
+}
+
+#cart td {
+	vertical-align: top;
+}
+
+#cart tr td:nth-of-type(2), #cart tr th:nth-of-type(2) {
+	text-align: left;
+	cursor: pointer;
+}
+
+.item-quantity {
+	font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	width: 15%;
+	margin-right: 2.5%;
+	border-style: none;
+	border: 1px solid #aaaaaa;
+	border-radius: 3px;
+}
+
+.remove-item {
+	cursor: pointer;
+}
+
+.cart-items {
+	display: inline-block;
+	height: 100px;
+	max-height: 100px;
+	min-height: 100px;
+}
+
+#total-cost {
+	display: inline-block;
+	font-size: 32px;
+	margin-bottom: 20%;
+}
+
+#place-order {
+	cursor: pointer;
+	font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: red;
+	border: 0;
+	color: white;
+	font-size: 14px;
+	height: 7.5%;
+	width: 75%;
+	text-transform: uppercase;
+}
 
 

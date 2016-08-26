@@ -108,10 +108,8 @@ i {
 
 #header {
 	position: fixed;
-
 	display: table;
 	table-layout: fixed;
-
 	top: 0; 
 	left: 0;
 	height: 10%;
@@ -120,9 +118,7 @@ i {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 	background-color: rgba(255, 255, 255, 0.95);
-
 	z-index: 10000;
 }
 
@@ -136,11 +132,8 @@ i {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 	background-color: white;
-
 	z-index: 10;
-
 	text-align: center;
 	display: inline-block;
 }
@@ -209,14 +202,9 @@ i {
 }
 
 #search-bar-icon {
-	cursor: pointer;
 	position: relative;
 	font-size: 14px !important;
 	left: 25px;
-}
-
-#search-bar-icon::before {
-	content: "\f002";
 }
 
 #logo {
@@ -251,17 +239,13 @@ i {
 	list-style-type: none;
     margin: 0;
     padding: 0;
-
-    height: 5%;
+	height: 5%;
     width: auto;
-
-    background-color: inherit;
+	background-color: inherit;
     display: inline-table;
     table-layout: fixed;
-
-    text-align: left;
-
-    vertical-align: middle;
+	text-align: left;
+	vertical-align: middle;
 }
 
 #main-nav li {
@@ -272,15 +256,12 @@ i {
 	display: table-cell;
 	vertical-align: middle;
 	padding: 15px;
-
 	font-size: 14px;
-
 	text-align: center;
     text-transform: uppercase;	
 	color: #404040;
     cursor: pointer;
     text-decoration: none;
-
     -webkit-transition: border 1s;
     transition: border 1s;
 }
@@ -336,17 +317,7 @@ i {
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19) !important;
 	width: 24%;
 	height: 55%;
-	/*border-radius: 3px;*/
 	vertical-align: top;
-}
-
-.share-icon {
-	font-size: 12px;
-	position: absolute;
-	cursor: pointer;
-	top: 10px;
-	right: 10px;
-	color: #404040;
 }
 
 .item-image {
@@ -354,8 +325,6 @@ i {
 	width: 100%;
 	max-height: 60%;
 	min-height: 60%;
-	/*border-top-left-radius: 3px;
-	border-top-right-radius: 3px;*/
 }
 
 .retailer-logo {
@@ -396,7 +365,6 @@ i {
 .input-icons {
 	display: table-cell;
 	width: 24%;
-	cursor: pointer;
 }
 
 .fa-thumbs-up.input-icons:focus {
@@ -488,6 +456,13 @@ i {
 	cursor: pointer;
 }
 
+#cart-header {
+	text-align: left; 
+	padding-left: 25px; 
+	font-size: 22px;
+	font-weight: 200 !important;
+}
+
 .item-quantity {
 	font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
@@ -512,7 +487,22 @@ i {
 #total-cost {
 	display: inline-block;
 	font-size: 32px;
-	margin-bottom: 20%;
+	margin-bottom: 22.5%;
+}
+
+#promo-code {
+	border: 0;
+	border-radius: 3px;
+	height: 3%;
+}
+
+#cart-summary {
+	right: 1.5%;
+	position: fixed;
+	height: 95%; 
+	width: 15%; 
+	display: inline-block;
+	background: #dddddd;
 }
 
 #place-order {

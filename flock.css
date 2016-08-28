@@ -83,6 +83,8 @@
 
 /*CSS Element Styling*/
 
+/* Global */
+
 html {
 	box-sizing: border-box;
 }
@@ -110,6 +112,12 @@ i {
 .hidden {
 	display: none;
 }
+
+button:hover, button:focus {
+	background: pink;
+}
+
+/* Element-specific */
 
 #header {
 	position: fixed;
@@ -539,11 +547,13 @@ i {
 	width: 80%;
 	margin:auto;
 }
+
 .tab-group:after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
 .tab-group li a {
 	display: block;
 	text-decoration: none;
@@ -558,6 +568,7 @@ i {
 	-webkit-transition: .5s ease;
 	transition: .5s ease;
 }
+
 .tab-content > div:last-child {
 	display: none;
 }
@@ -566,6 +577,7 @@ i {
 	background: #F9C0BF;
 	color: #ffffff;
 }
+
 .tab-group .active a {
 	background: #DEA5A4;
 	color: white;
@@ -576,7 +588,7 @@ i {
 	margin: auto;
 }
 
-.login-items input, textarea {
+.login-items {
 	font-size: 15px;
 	font-family: inherit;
 	font-weight: 100;
@@ -593,7 +605,7 @@ i {
 	margin-bottom: 30px;
 }
 
-.login-items input:focus, .login-items textarea:focus {
+.login-items:focus, .login-items:focus {
 	outline: 0;
 	border-color: red;
 }
@@ -603,30 +615,28 @@ i {
 	display: table;
 	clear: both;
 }
+
 .top-row > div {
 	float: left;
 	width: 48%;
 	margin-right: 4%;
 }
+
 .top-row > div:last-child {
 	margin: 0;
 }
 
-#login-register-button {
+.login-register-button {
+	font-family: "Circular Book";
 	border: 0;
 	outline: none;
 	border-radius: 0;
 	padding: 15px 40px;
 	font-size: 2rem;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
 	background: red;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	-webkit-appearance: none;
-}
-
-.button:hover, .button:focus {
-	background: pink;
 }

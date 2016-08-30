@@ -633,6 +633,8 @@ button:hover, button:focus {
 	padding: 15px 40px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
+    margin: 60px auto 50px;
+    display: block;
 	background: red;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease;

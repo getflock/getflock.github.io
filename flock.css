@@ -83,23 +83,22 @@
 
 /*CSS Element Styling*/
 
+/* Global */
+
 html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-	font-family: 'Circular Book';
+	box-sizing: border-box;
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+	font-family: 'Circular Book';
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 a {
@@ -113,6 +112,12 @@ i {
 .hidden {
 	display: none;
 }
+
+button:hover, button:focus {
+	background: pink;
+}
+
+/* Element-specific */
 
 #header {
 	position: fixed;
@@ -152,11 +157,11 @@ i {
 	height: 100%;
 	width: 100%;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin: auto;
-    text-align: center;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	margin: auto;
+	text-align: center;
 }
 
 #downArrow {
@@ -245,13 +250,13 @@ i {
 
 #main-nav {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	height: 5%;
-    width: auto;
+	width: auto;
 	background-color: inherit;
-    display: inline-table;
-    table-layout: fixed;
+	display: inline-table;
+	table-layout: fixed;
 	text-align: left;
 	vertical-align: middle;
 }
@@ -266,12 +271,12 @@ i {
 	padding: 15px;
 	font-size: 14px;
 	text-align: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
 	color: #404040;
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-transition: border 1s;
-    transition: border 1s;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: border 1s;
+	transition: border 1s;
 }
 
 .underline-from-left {
@@ -528,109 +533,109 @@ i {
 /*    LOGIN PAGE STYLES   */
 
 .form {
-  padding: 40px;
-  max-width: 800px;
-  margin: 40px auto;
-  border-radius: 5px;
-  box-shadow: 0 1px 1px 1px rgba(19, 35, 47, 0.2);
+	padding: 40px;
+ 	max-width: 800px;
+ 	margin: 40px auto;
+ 	box-shadow: 0 1px 1px 1px rgba(19, 35, 47, 0.2);
 }
 
 .tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
 	width: 80%;
-	margin:auto;
+	margin: auto;
 }
+
 .tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
+
 .tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: rgba(176, 179, 176, 0.25);
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: rgba(176, 179, 176, 0.25);
+	color: #a0b3b0;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
 }
+
 .tab-content > div:last-child {
-  display: none;
+	display: none;
 }
 
 .tab-group li a:hover {
-  background: #F9C0BF;
-  color: #ffffff;
+	background: #F9C0BF;
+	color: #ffffff;
 }
+
 .tab-group .active a {
-  background: #DEA5A4;
+	background: #DEA5A4;
 	color: white;
 }
 
 #register, #login {
 	width: 80%;
 	margin: auto;
-
 }
 
-input, textarea {
-  font-size: 15px;
+.login-items {
+	font-size: 15px;
 	font-family: inherit;
 	font-weight: 100;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 15px 20px;
-  border: 1px solid #a0b3b0;
-  color: #555;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 15px 20px;
+	border: 1px solid #a0b3b0;
+	color: #555;
+	border-radius: 0;
+	-webkit-transition: border-color .25s ease, box-shadow .25s ease;
+	transition: border-color .25s ease, box-shadow .25s ease;
 	position: relative;
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
-input:focus, textarea:focus {
-  outline: 0;
-  border-color: red;
+.login-items:focus, .login-items:focus {
+	outline: 0;
+	border-color: red;
 }
 
 .top-row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
+
 .top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
 }
+
 .top-row > div:last-child {
-  margin: 0;
+	margin: 0;
 }
 
-.button {
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px 40px;
-  font-size: 2rem;
-  text-transform: uppercase;
-	letter-spacing: 0.1em;
-  background: red;
-  color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-appearance: none;
-}
-
-.button:hover, .button:focus {
-  background: pink;
+.login-register-button {
+	font-family: "Circular Book";
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	padding: 15px 40px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	background: red;
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-appearance: none;
 }
